@@ -9,19 +9,92 @@
 <ion-content>
   <form>
     <ion-stepper #stepper [(selectedIndex)]="selectedIndex" [mode]="'vertical'">
-      <ion-step label="Name" description="Your name">
-        <ion-input placeholder="Text Input"></ion-input>
+      <ion-step
+        label="Probennox aktiviert"
+        description="Here goes step number 1"
+      >
+        <p readonly name="step1" id="step1" cols="30" rows="10">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
         <button type="button" ion-button small ionicStepperNext>Next</button>
       </ion-step>
-      <ion-step label="Email" description="Your email">
-        <ion-input placeholder="Text Input"></ion-input>
-        <button type="button" ion-button color="light" small ionicStepperPrevious>Previous</button>
+      <ion-step
+        label="Bevor du die  Probennox zu uns ins Labor schiken kannst"
+        description="Here goes step number 2"
+      >
+      <p readonly name="step1" id="step1" cols="30" rows="10">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        aliquip ex ea commodo consequat. Duis aute irure dolor in
+        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur.
+      </p>
+        <button
+          type="button"
+          ion-button
+          color="light"
+          small
+          ionicStepperPrevious
+        >
+          Previous
+        </button>
         <button type="button" ion-button small ionicStepperNext>Next</button>
       </ion-step>
-      <ion-step label="Address" description="Your address">
-        <ion-input placeholder="Text Input"></ion-input>
-        <button type="button" ion-button color="light" small ionicStepperPrevious>Previous</button>
+      <ion-step label="Was musst man beim Sammein beachten?" description="Here goes step number 3">
+        <p readonly name="step3" id="step3" cols="30" rows="10">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <button
+          type="button"
+          ion-button
+          color="light"
+          small
+          ionicStepperPrevious
+        >
+          Previous
+        </button>
         <button type="button" ion-button small ionicStepperNext>Next</button>
+      </ion-step>
+      <ion-step label="Was musst man beim Sammein beachten?" description="Here goes step number 4">
+        <p readonly name="step4" id="step4" cols="30" rows="10">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <button
+          type="button"
+          ion-button
+          color="light"
+          small
+          ionicStepperPrevious
+        >
+          Previous
+        </button>
+        <button type="button" ion-button small ionicStepperNext>Next</button>
+      </ion-step>
+      <ion-step label="Was musst man beim Sammein beachten?" description="Here goes step number 5">
+        <p readonly name="step5" id="step5" cols="30" rows="10">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur.
+        </p>
+        <button
+          type="button"
+          ion-button
+          color="light"
+          small
+          ionicStepperPrevious
+        >
+          Previous
+        </button>
       </ion-step>
     </ion-stepper>
   </form>

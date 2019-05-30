@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic App - Vetevo
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <form>
+    <ion-stepper #stepper [(selectedIndex)]="selectedIndex" [mode]="'vertical'">
+      <ion-step label="Name" description="Your name">
+        <ion-input placeholder="Text Input"></ion-input>
+        <button type="button" ion-button small ionicStepperNext>Next</button>
+      </ion-step>
+      <ion-step label="Email" description="Your email">
+        <ion-input placeholder="Text Input"></ion-input>
+        <button type="button" ion-button color="light" small ionicStepperPrevious>Previous</button>
+        <button type="button" ion-button small ionicStepperNext>Next</button>
+      </ion-step>
+      <ion-step label="Address" description="Your address">
+        <ion-input placeholder="Text Input"></ion-input>
+        <button type="button" ion-button color="light" small ionicStepperPrevious>Previous</button>
+        <button type="button" ion-button small ionicStepperNext>Next</button>
+      </ion-step>
+    </ion-stepper>
+  </form>
+</ion-content>
